@@ -1,0 +1,14 @@
+
+https://cse.unl.edu/~grother/papers/icsm99.pdf    : paper on Additional branch coverage prioritiz
+
+https://gcc.gnu.org/onlinedocs/gcc/Invoking-Gcov.html      : read up on .gcov files
+
+https://stackoverflow.com/questions/27056872/how-to-read-n-th-line-from-a-text-file-in-bash   : sed command
+
+https://www.howtoforge.com/linux-nl-command/     : nl command
+
+https://unix.stackexchange.com/questions/169402/grep-pattern-exacly-matching-from-file-and-search-only-in-first-column    : -w flag on grep
+
+https://www.cyberciti.biz/faq/unix-howto-read-line-by-line-from-file/  : read a line in input file
+
+

@@ -1,0 +1,9 @@
+*****Welcome to bidding war***** 
+Instructions: 
+ -Enter an increase in bid value from 1-10 
+ -If you enter a value > 10, then modulo 10 is taken 
+ -Enter 0 to give up the war and exit
+
+Enter initial bid : 0
+You quit the bidding war 
+

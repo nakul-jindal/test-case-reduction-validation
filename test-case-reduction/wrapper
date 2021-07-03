@@ -1,0 +1,8 @@
+#!/bin/bash
+
+echo enter value of n : 
+
+g++ generate.cpp
+./a.out > test/T
+
+./reduce.sh

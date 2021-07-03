@@ -1,0 +1,16 @@
+*****Welcome to bidding war***** 
+Instructions: 
+ -Enter an increase in bid value from 1-10 
+ -If you enter a value > 10, then modulo 10 is taken 
+ -Enter 0 to give up the war and exit
+
+Enter initial bid : 2
+your bid was matched by opposing teams 
+current bid = 4
+
+Enter increase in bid : -1
+please enter a non-negative integer bid : 1.5
+please enter a non-negative integer bid : f
+please enter a non-negative integer bid : 44444444444
+please enter a non-negative integer bid : 0
+You quit the bidding war 

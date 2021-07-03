@@ -1,0 +1,38 @@
+#report and steps for assignment 3 :
+
+USAGE:
+run $./wrapper 
+enter the value of n
+enter the value of k
+
+NOTE : the program assumes that the sample program is present as "P.cpp" in the test directory , so please create one while testing . thanks.
+
+1. generate.cpp : simple c++ program to generate 'n' pairs of integers using rand() function to be used as test cases . the output is redirected to test/T file 
+
+2. ran those test cases on a sample program P with multiple if-else statements with flags => -Wall -g -fprofile-arcs -ftest-coverage
+and applied 'gcov -b -c <file>' on it . 
+
+what i Learned about the .cpp.gcov file : 
+The -b flag is used to write branch frequencies to this file . 
+if a branch was executed, then the number of times the branch is executed is printed as : branch :x: taken <frequency> .
+else a message is printed as : branch :x: never executed. 
+NOTE : if we didn't use -c flag, then percentage times executed is printed instead of frequency .
+
+3. reduced.sh : For each test case , I parsed the .gcov file to get those branches which were 'taken' and had frequency > 1 and kept the record for each test case in a separate file using basic grep,sed,awk commands. (I assigned integer key values to all branches and only stored the key values of those which were covered by that particular test case)
+
+Algorithm used to reduce number of test cases : Additional branch coverage prioritization
+A naive method was to simply calculate the test cases having max branch coverages . however, they may be covering the same branch everytime so it is inefficient . In Additional branch coverage prioritization, we first take the test case with max branch coverage and then adjust the branch coverage of remaining test cases by excluding the branches already covered by previous test case . Again calculate the test case with greatest branch coverage and repeat this process, until all branches have been covered by at least one test case.
+
+
+4. algo.cpp : To implement this algo , wrote a c++ program to take input the key values of the 'b' number of branches covered by each of 'n' test cases and structured them in a adjacency 2D matrix with boolean values : 
+a[n][b]=1 if n-th test case covers b-th branch
+a[n][b]=0 if n-th test case DOES NOT cover b-th branch
+
+calculate the test case with max branches covered , change the the boolean value of the branches covered by this test case to 0 for all the remaining test cases as well. Again Find the test case with highest coverage (by simply takin sum of boolean values) and repeat for either
+k-iterations (to get top-k test cases) or until each branch gets covered i.e whole matrix has 0 values 
+
+push the test cases for max branch coverages at each step into a vector and output all the 'selected' test cases (<k) into reduced test case file . 
+
+time complexity : O(k*b*n)
+explanation : (max k number of iterations to get top priority test cases)*(iterate through whole n*b adjacency matrix)
+

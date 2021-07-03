@@ -1,0 +1,64 @@
+*****Welcome to bidding war***** 
+Instructions: 
+ -Enter an increase in bid value from 1-10 
+ -If you enter a value > 10, then modulo 10 is taken 
+ -Enter 0 to give up the war and exit
+
+Enter initial bid : 2147483647
+your bid was matched by opposing teams 
+current bid = 14
+
+Enter increase in bid : 2147483647
+your bid was matched by opposing teams 
+current bid = 28
+
+Enter increase in bid : 2147483647
+your bid was matched by opposing teams 
+current bid = 42
+
+Enter increase in bid : 2147483647
+your bid was matched by opposing teams 
+current bid = 56
+
+Enter increase in bid : 2147483647
+your bid was matched by opposing teams 
+current bid = 70
+
+Enter increase in bid : 2147483647
+your bid was matched by opposing teams 
+current bid = 84
+
+Enter increase in bid : 2147483647
+your bid was matched by opposing teams 
+current bid = 98
+
+Enter increase in bid : 2147483647
+your bid was matched by opposing teams 
+current bid = 112
+
+Enter increase in bid : 2147483647
+your bid was matched by opposing teams 
+current bid = 126
+
+Enter increase in bid : 2147483647
+your bid was matched by opposing teams 
+current bid = 140
+
+Enter increase in bid : 2147483647
+your bid was matched by opposing teams 
+current bid = 154
+
+Enter increase in bid : 2147483647
+your bid was matched by opposing teams 
+current bid = 168
+
+Enter increase in bid : 2147483647
+your bid was matched by opposing teams 
+current bid = 182
+
+Enter increase in bid : 2147483647
+your bid was matched by opposing teams 
+current bid = 196
+
+Enter increase in bid : 2147483647
+you won with a bid of 203
